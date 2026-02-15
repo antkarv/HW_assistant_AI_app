@@ -1,19 +1,3 @@
-<<<<<<< HEAD
----
-title: HW Assistant AI App
-emoji: 💻
-colorFrom: red
-colorTo: blue
-sdk: gradio
-sdk_version: 6.5.1
-app_file: app.py
-pinned: false
-license: mit
-short_description: Hardware QA Assistant is an advanced AI system
----
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
-=======
 # 🔧 Hardware QA Assistant – Advanced LangGraph AI System
 
 > AI-powered Hardware Design & Datasheet Analysis Assistant  
@@ -84,70 +68,6 @@ Architecture diagram:
 | UI | Gradio |
 | Auth | JWT + SQLite |
 | Deployment | Uvicorn |
-
----
-
-## 📦 Installation
-
-### 1️⃣ Clone Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/HW_assistant_AI_app.git
-cd HW_assistant_AI_app
-```
-
----
-
-### 2️⃣ Create Virtual Environment
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate      # Windows
-# or
-source .venv/bin/activate   # Linux / macOS
-```
-
----
-
-### 3️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 4️⃣ Create `.env` File
-
-Create a `.env` file in the project root:
-
-```
-GROQ_API_KEY=your_key_here
-AUTH_SECRET=your_super_secret
-TAVILY_API_KEY=optional
-```
-
----
-
-### 5️⃣ Create First User
-
-```bash
-python -c "from users import create_user; create_user('admin@example.com','StrongPass!23', True)"
-```
-
----
-
-### 6️⃣ Run the Application
-
-```bash
-uvicorn secure_server:app --host 0.0.0.0 --port 8000
-```
-
-Open in browser:
-
-```
-http://localhost:8000
-```
 
 ---
 
@@ -239,4 +159,4 @@ http://localhost:8000
 AI Systems Engineer | Telecom Architect  
 
 ---
->>>>>>> 6254b0c (Add README.md for Hardware QA Assistant project)
+
