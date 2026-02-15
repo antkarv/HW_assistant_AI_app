@@ -1,7 +1,7 @@
 # requirements.txt
 # Core app & utilities
 langgraph>=0.2.36
-gradio==4.44.0
+gradio>=4.44.0
 python-dotenv>=1.0.1
 requests>=2.32.3
 langchain_openai
