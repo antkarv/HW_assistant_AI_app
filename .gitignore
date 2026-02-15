@@ -1,0 +1,37 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Chroma vector DB
+.chroma_hwqa_workspace/
+
+# SQLite auth database
+users.db
+
+# Gradio / history
+.history/
+.gradio/
+
+# VS Code
+.vscode/
+
+# Temporary reports
+hwqa_summary_*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Not used directories
+Input schema
+previous_code
+akarb_pdfs
+Input_pdfs
+changes_from_github

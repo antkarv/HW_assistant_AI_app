@@ -1,0 +1,36 @@
+# requirements.txt
+# Core app & utilities
+langgraph>=0.2.36
+gradio>=4.44.0
+python-dotenv>=1.0.1
+requests>=2.32.3
+langchain_openai
+
+# Vector DB + embeddings
+chromadb>=0.5.5
+sentence-transformers>=3.0.1
+
+# Parsing / OCR stack
+pymupdf>=1.24.7          # import name: fitz
+python-docx>=1.1.2
+pdf2image>=1.17.0
+pillow>=10.4.0
+opencv-python>=4.10.0.84
+numpy>=1.26.0
+paddleocr>=2.8.1         # OCR (best); requires system paddlepaddle (see notes below)
+pytesseract>=0.3.13      # OCR fallback (needs the Tesseract binary installed)
+
+# Web search (optional but supported)
+tavily-python>=0.3.5
+networkx>=3.2
+matplotlib>=3.8
+
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-jose[cryptography]>=3.3.0
+argon2-cffi>=23.1.0
+
+
+# Notes:
+# 1) Run the app using `uvicorn secure_server:app --host 0.0.0.0 --port 8000
+ 
