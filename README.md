@@ -5,6 +5,13 @@
 
 ---
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![LangGraph](https://img.shields.io/badge/LangGraph-Stateful-green)
+![RAG](https://img.shields.io/badge/RAG-v2-orange)
+![Gradio](https://img.shields.io/badge/Gradio-UI-red)
+![HuggingFace](https://img.shields.io/badge/Deployment-HF_Spaces-yellow)
+
+
 ## 🚀 Overview
 
 **Hardware QA Assistant** is an advanced AI system designed to:
@@ -21,6 +28,36 @@
 This project demonstrates a **production-style AI architecture**, not just a simple chatbot.
 
 ---
+
+## 🌐 Live Demo
+
+🚀 Try the application live on HuggingFace Spaces:
+
+👉 **Live Demo:** https://huggingface.co/spaces/ankarb/HW_assistant_AI_app
+
+The demo includes:
+- Per-user workspace isolation
+- Multi-stage RAG pipeline
+- Vision-based schematic analysis
+- Execution trace visualization
+
+---
+
+## 🧠 System Design Perspective
+
+This project demonstrates advanced AI system engineering concepts:
+
+- Stateful graph orchestration using LangGraph
+- Hybrid retrieval strategy (Multi-query + RRF + Cross-Encoder + MMR)
+- Vision + RAG integration pipeline
+- Parent-child chunk promotion
+- Per-user workspace isolation
+- Execution trace introspection
+- Token-level LLM monitoring
+- Modular architecture ready for production scaling
+
+It is intentionally designed as a **production-style AI system**, not a simple chatbot wrapper.
+
 
 ## 🧠 Architecture
 
@@ -64,7 +101,7 @@ Architecture diagram:
 | OCR | PaddleOCR / Tesseract |
 | Vision | LLaMA Vision model |
 | Web Search | Tavily |
-| Backend | FastAPI |
+| Backend | Gradio (HF Spaces) / FastAPI (local dev) |
 | UI | Gradio |
 | Auth | JWT + SQLite |
 | Deployment | Uvicorn |
@@ -129,27 +166,6 @@ Architecture diagram:
 ├── langgraph-visualization.png
 └── README.md
 ```
-
----
-
-## 🔒 Security Notes
-
-- `.env` is excluded via `.gitignore`
-- Vector DB is local-only
-- SQLite user DB is not versioned
-- JWT tokens include expiration
-- No API keys are stored in repository
-
----
-
-## 📈 Future Improvements
-
-- Docker containerization
-- Production-ready deployment configuration
-- Redis-based session memory
-- Multi-tenant workspace isolation
-- CI/CD pipeline
-- HuggingFace / Render deployment
 
 ---
 
