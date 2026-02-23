@@ -19,13 +19,12 @@
 - Analyze hardware design questions
 - Parse and index datasheets (PDF / DOCX)
 - Extract structured information from schematic images (Vision LLM)
-- Perform multi-query semantic retrieval (RAG v2 pipeline)
-- Rerank results using Cross-Encoder
+- Perform advanced hybrid retrieval (multi-query expansion + RRF fusion + cross-encoder reranking + MMR diversification)
 - Optionally enrich answers with live web search
 - Provide execution trace & LLM inspection
 - Support secure user authentication (JWT + SQLite)
 
-This project demonstrates a **production-style AI architecture**, not just a simple chatbot.
+This project demonstrates a production-style AI architecture — not just a simple chatbot — designed to explore production-ready RAG system patterns, including hybrid retrieval, reranking pipelines, stateful orchestration, and per-user isolation, reflecting enterprise-grade AI architecture principles.
 
 ---
 
@@ -40,6 +39,8 @@ The demo includes:
 - Multi-stage RAG pipeline
 - Vision-based schematic analysis
 - Execution trace visualization
+
+The HuggingFace deployment demonstrates a stateless frontend with persistent vector storage and authenticated user isolation.
 
 ---
 
@@ -56,9 +57,17 @@ This project demonstrates advanced AI system engineering concepts:
 - Token-level LLM monitoring
 - Modular architecture ready for production scaling
 
-It is intentionally designed as a **production-style AI system**, not a simple chatbot wrapper.
+---
+## 🎯 Architectural Differentiators
+- Explicit stateful orchestration (LangGraph StateGraph)
+- Hybrid retrieval stack (Multi-query + RRF + Cross-Encoder + MMR)
+- Parent-child chunk promotion strategy
+- Vision + RAG integrated reasoning
+- Execution trace transparency
+- Built-in observability through execution trace inspection and token-level monitoring
+- Designed with modular components enabling horizontal scaling and retriever abstraction
 
-
+---
 ## 🧠 Architecture
 
 The system is built around a LangGraph state machine:
@@ -172,7 +181,7 @@ Architecture diagram:
 ## 👨‍💻 Author
 
 **Antonios Karvelas**  
-AI Systems Engineer | Telecom Architect  
+AI Systems Architect | Telecom Systems Architect
 
 ---
 
